@@ -1,0 +1,39 @@
+<DOCTYPE html!>
+
+    <head>
+        <title>Snowly ToDo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel = "Stylesheet" href = "css/todo.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+     </head>
+
+    <body>
+
+        <div id = "todo">
+            <h1> SNOWLY TO-DO LIST <i id="pencil" class="fas fa-pencil-alt"></i> </h1>
+
+            <input type = "text" placeholder="Add New Todo">
+
+            <ul class="todos">
+                
+                <li><span><i class="fas fa-trash-alt"></i></span>Сделать пост в Инстаграм</li>
+            </ul>
+
+            <div id= "buttons">
+                <button class="save">Save</button>
+                <button class="clear">Clear</button>
+                <button class="tipBtn">Tips</button>
+            </div>
+        </div>
+
+        <div id = "overlay">
+           <a href="javascript:void(0)" class="closebtn">&times;</a>
+           <ul class="tips">
+               <li>Only for Snowly</li>
+               <li>By Overwolf</li>
+            </ul>
+            
+        </div>
+        <script src="Js/todo2.js"></script>
+    </body>
