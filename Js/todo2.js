@@ -46,7 +46,19 @@ input.addEventListener("keypress",function(keyPressed){
     ul.appendChild(li).append(spanElement,newTodo);
 
     deleteTodo();
-    
+    //alert on click. 
+    var correct_answers = ["Диабло будет гордиться)", "Умница", ":3", "О! Ещё одна новая цель", "Ты справишься)", "^^", "Nyan^^", "Meow^^"];
+
+correct_answers[Math.floor(Math.random()*correct_answers.length)];
+
+function ClickAnswer() {
+  if (true) {
+    window.alert(correct_answers[Math.floor(Math.random()*correct_answers.length)]);
+  }
+}
+
+ClickAnswer();
+  //delete this.
     }
     
 });
@@ -63,6 +75,18 @@ ul.addEventListener('click', function(ev) {
 pencil.addEventListener('click', function(){
   input.classList.toggle('display');
 });
+
+//change  background color
+el_up.innerHTML = str; 
+          
+function changeColor(color) { 
+    document.body.style.background = color; 
+} 
+  
+function gfg_Run() { 
+    changeColor('black'); 
+    el_down.innerHTML = "Background Color changed"; 
+}          
 
 
 
